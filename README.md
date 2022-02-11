@@ -7,6 +7,7 @@ Housing market in United States.
 ## The data source used for the topic
 
 Zillow database
+Zillow source: https://www.zillow.com/research/data/
 
 ## The group hypothesis
 
@@ -29,4 +30,3 @@ Javascript - MapBox
 SQL Postgres - Joining data 
 
 
-Zillow source: https://www.zillow.com/research/data/
