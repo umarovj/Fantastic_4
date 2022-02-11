@@ -11,7 +11,7 @@ Zillow source: https://www.zillow.com/research/data/
 
 ## The group hypothesis
 
-HHypothesis and Goal:
+Hypothesis and Goal:
 
 The housing market is an integral part of millions of Americans lives. A home isn’t just where one’s heart is, it is also a where we spend most of our time, especially in the age of COVID. It should then be clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd many out of the market, and a particularly low price could be an indicator of potential problem with the home itself. What is ultimately optimal is variant between individuals, but the main question for all potential buyers remains: “How much is this house really worth?”
 
