@@ -14,3 +14,7 @@ House price increases the closer it is to the ocean.
 
 
 ## The group's thought on what approach they may want to use for analysis (i.e. what ML technique we may want to use to investigate the hypothesis)
+
+
+
+Zillow source: https://www.zillow.com/research/data/
