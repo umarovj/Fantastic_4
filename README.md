@@ -7,6 +7,7 @@ Housing market in United States.
 ## The data source used for the topic
 
 Zillow database
+
 Zillow source: https://www.zillow.com/research/data/
 
 ## The group hypothesis
@@ -23,12 +24,16 @@ As mentioned, our project will rely heavily on machine learning for the results 
 
 ## The group's thought on what approach they may want to use for analysis (i.e. what ML technique we may want to use to investigate the hypothesis)
 
-Multi-linear Regression
+ML technique - Multi-linear Regression
 
-Tableu - Map Visulization
-Juptyer Notebook - Matplotlib, 
-Machine Learning - Random Forrest Classifer, 
-Javascript - MapBox
-SQL Postgres - Joining data 
+Applicaitons/Languages to be used:
+
+Tableu - Map Visulization, Charts, visual data comparison, Tableu Public for web application. 
+
+Javascript - MapBox, creating a website with application integrated
+
+Juptyer Notebook/google Colab - Matplotlib, data processing, data parsing, website scraping
+
+SQL Postgres - Joining datasets, quickly analyzing data structures
 
 
