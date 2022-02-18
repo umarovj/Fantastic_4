@@ -10,9 +10,9 @@ Housing market in United States.
 https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices
 
 
-~~ ~~Zillow database
+~~Zillow database~~
 
-~~ ~~Zillow source: https://www.zillow.com/research/data/
+~~Zillow source: https://www.zillow.com/research/data/~~
 
 ## The group hypothesis
 
