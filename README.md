@@ -6,9 +6,13 @@ Housing market in United States.
 
 ## The data source used for the topic
 
-Zillow database
 
-Zillow source: https://www.zillow.com/research/data/
+https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices
+
+
+~~ ~~Zillow database
+
+~~ ~~Zillow source: https://www.zillow.com/research/data/
 
 ## The group hypothesis
 
