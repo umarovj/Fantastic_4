@@ -40,4 +40,32 @@ Juptyer Notebook/google Colab - Matplotlib, data processing, data parsing, websi
 
 SQL Postgres - Joining datasets, quickly analyzing data structures
 
+## Storing Our Data
 
+The primary source of data used for our analysis would be a csv file on homes sold in Kings County. We took this dataset and uploaded into a Jupyter Notebook originally before converting it into a dataframe for easier manipulation. Afterwards, we created a Google Colab environment for the future to make appropriate edits and analysis easier for all parties involved.
+
+![image](https://user-images.githubusercontent.com/91284661/154810009-9b066cb1-5479-4c8d-8d08-e3c98bbec665.png)
+
+After importing our dependencies, the first step is to ensure that our data was not corrupted upon transfer. From a locally saved filepath, the csv file was imported into a dataframe and upon a glance is indeed showing up correctly.
+
+![image](https://user-images.githubusercontent.com/91284661/154810027-a83736e0-1f4b-4bb1-8c89-4cea75312333.png)
+
+## Key Summary Stats
+
+Now our analysis can begin in earnest, to begin, we will use various functions starting with .describe() to achieve some baseline-readings of the contents of our data.
+
+![image](https://user-images.githubusercontent.com/91284661/154810046-d05e2b3e-e0dc-498b-87db-c498d5df4958.png)
+
+The exact contents of our quick analysis at-a-glance might better be viewed through the various histograms several cells later in our notebook we created. Still, to go into detail a bit, the first thing to note is that with few exceptions the count for each variable within our dataset is the same at 21,613 meaning there are few cells without data on them. Beyond this, summary statistics such as the std or standard deviation and mean will indicate variance potential skew and bias within each measurement.
+
+![image](https://user-images.githubusercontent.com/91284661/154810065-34699061-3808-4fc3-b9e7-8a0ae23ed16e.png)
+
+Such skew is present in our target variable, price shown in the histogram above. From viewing this, we can tell that there are significant data points on the higher end of the price index causing a large bias in our data directed towards higher prices.
+
+## Goals and Analysis
+
+With a general idea of how our data-frame works we were left refining exactly what we wanted to understand for this project. To begin, we looked back over our data to determine which factors seemed more pertinent to a general analysis on which factors are more relevant to a property’s value aka price. While asking these questions we also began to gather an understanding of just how we would ultimately clean up our data as part of this overall process.
+
+![image](https://user-images.githubusercontent.com/91284661/154810092-54813974-0c13-4acc-9f20-94b7b0f23511.png)
+
+To begin, we identified potential variable types (view and id) as redundant info to be dropped. On top of this, various other parameters such as lat and long were identified as less relevant for our analysis. This left the variables highlighted in green as more significant in the first part of our analysis. From these targeted variables, we were in essence gathering the building blocks to our machine learning algorithm that would be the base of our project.
