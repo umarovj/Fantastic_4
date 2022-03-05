@@ -1,160 +1,250 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
 </head>
+
 <body class="w3-light-grey">
 
-<!-- w3-content defines a container for fixed size centered content, 
+  <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+  <div class="w3-content" style="max-width:1400px">
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>Fantastic 4</b></h1>
-  <p><span class="w3-tag">John Umarov<br>Edna Achieng Okundi<br>Chris Linarducci<br>Andrew Blom </span></p>
-</header>
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b>Fantastic 4</b></h1>
+      <p><span class="w3-tag">John Umarov<br>Edna Achieng Okundi<br>Chris Linarducci<br>Andrew Blom </span></p>
+    </header>
 
-<!-- Grid -->
-<div class="w3-row">
+    <!-- Grid -->
 
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="Resources\housing-photo.jfif" style="width: 100%; height: 237px; object-fit: cover;">
-    <div class="w3-container">
-      <h3><b>The Hypothesis</b></h3>
-      <h5>House Sales of King County, Washington <span class="w3-opacity"></span></h5>
-      <a href="https://drive.google.com/file/d/1wJNC3d67wOyCcJnJ-zb8UQLXREac9592/view?usp=sharing" download="logo.png">The Data CSV File</a>
-      
-      
-    </div>
 
-    <div class="w3-container">
-      <p>The housing market is an integral part of millions of Americans lives. A home isn’t just where one’s heart is, it is also a where we spend most of our time, especially in the age of COVID. It should then be clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd many out of the market, and a particularly low price could be an indicator of potential problem with the home itself. What is ultimately optimal is variant between individuals, but the main question for all potential buyers remains: “How much is this house really worth?” <br></p>
 
-      <p>  For our project, we will answering just that. We will be performing a general analysis on the various factors that determine housing prices. More specifically, it is our belief that we can accurately predict a home’s price given a specific set of parameters. To begin, we complied a series of data sources from Zillow, climatology resource centers, and others. Using this data, we will be constructing a machine learning algorithm to accurately predict a home’s price given multiple parameters such as a potential abode’s number of bedrooms, square footage, and location to name a few examples. The type of machine learning we will be employing is a standard Multilinear Regression model, with housing price as our target or independent variables, and the earlier mentioned parameters like number of bedrooms as our dependent variables. <br></p>
+
+
+
+    <div class="w3-row">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="Resources\housing-photo.jfif" style="width: 100%; height: 237px; object-fit: cover;">
+          <div class="w3-container">
+            <h3><b>The Hypothesis</b></h3>
+            <h5>House Sales of King County, Washington <span class="w3-opacity"></span></h5>
+            <a href="https://drive.google.com/file/d/1wJNC3d67wOyCcJnJ-zb8UQLXREac9592/view?usp=sharing"
+              download="logo.png">The Data CSV File</a>
+
+
+          </div>
+
+          <div class="w3-container">
+            <p>The housing market is an integral part of millions of Americans lives. A home isn’t just where one’s
+              heart is, it is also a where we spend most of our time, especially in the age of COVID. It should then be
+              clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd many
+              out of the market, and a particularly low price could be an indicator of potential problem with the home
+              itself. What is ultimately optimal is variant between individuals, but the main question for all potential
+              buyers remains: “How much is this house really worth?” <br></p>
+
+            <p> For our project, we will answering just that. We will be performing a general analysis on the various
+              factors that determine housing prices. More specifically, it is our belief that we can accurately predict
+              a home’s price given a specific set of parameters. To begin, we complied a series of data sources from
+              Zillow, climatology resource centers, and others. Using this data, we will be constructing a machine
+              learning algorithm to accurately predict a home’s price given multiple parameters such as a potential
+              abode’s number of bedrooms, square footage, and location to name a few examples. The type of machine
+              learning we will be employing is a standard Multilinear Regression model, with housing price as our target
+              or independent variables, and the earlier mentioned parameters like number of bedrooms as our dependent
+              variables. <br></p>
+
+            <p> Following initial regression on our existing data pool, it is then our goal to expand the scope of what
+              factors accurately and precisely determine a home’s price by finding more data and adding more variables
+              to our analysis. <br></p>
+
+            <p> As mentioned, our project will rely heavily on machine learning for the results regarding our analysis.
+              Still, additional resources and technology will be used, most prominently python and various packages such
+              as Matplotlib, Numpy, etc. We are also currently planning on employing tableau for data visualization and
+              SQL, in particular, for joining portions of our data as needed.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <!-- <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p> -->
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <!-- <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
+          <div class="w3-container">
+            <h3><b>Machine Learning: Linear Regression</b></h3>
+            <h5>Title description, <span class="w3-opacity"></span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Our analysis involved a machine learning tool to predict housing prices. We used the Linear Regression
+              model from the Scikit-learn machine learning library for Python. For accurate predictions, we first needed
+              to process the data. We dropped these columns: 'id', 'view', 'lat', 'long', 'sqft_living15', and
+              'sqft_lot15'. The zero values in "yr-renovated" column have been replaced with "NaN" to not let the
+              machine count them as year zero. Our data was then ready to be trained and fitted for prediction.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <!-- <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-card-4 w3-margin w3-white">
+          <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
+          <div class="w3-container">
+            <h3><b>Machine Learning</b></h3>
+            <h5>Title description, <span class="w3-opacity"></span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p> </p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <!-- <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- END BLOG ENTRIES -->
+
         
-      <p>  Following initial regression on our existing data pool, it is then our goal to expand the scope of what factors accurately and precisely determine a home’s price by finding more data and adding more variables to our analysis. <br></p>
-        
-      <p>  As mentioned, our project will rely heavily on machine learning for the results regarding our analysis. Still, additional resources and technology will be used, most prominently python and various packages such as Matplotlib, Numpy, etc. We are also currently planning on employing tableau for data visualization and SQL, in particular, for joining portions of our data as needed.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <!-- <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p> -->
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <!-- <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p> -->
-        </div>
+    
+
       </div>
-    </div>
-  </div>
-  <hr>
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
-    <div class="w3-container">
-      <h3><b>Machine Learning</b></h3>
-      <h5>Title description, <span class="w3-opacity"></span></h5>
-    </div>
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-card w3-margin w3-margin-top">
+          <!-- <img src="/w3images/avatar_g.jpg" style="width:100%"> -->
+          <div class="w3-container w3-white">
+            <h4><b>Project Overview</b></h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of
+              lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </div>
+        <hr>
 
-    <div class="w3-container">
-      <p>Our analysis involved a machine learning tool to predict housing prices. We used the Linear Regression model from the Scikit-learn machine learning library for Python. For accurate predictions, we first needed to process the data. We dropped these columns: 'id', 'view', 'lat', 'long', 'sqft_living15', and 'sqft_lot15'.  The zero values in "yr-renovated" column have been replaced with "NaN" to not let the machine count them as year zero. Our data was then ready to be trained and fitted for prediction.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        <!-- Posts -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>LINKS</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="\Resources\GitHub-Mark.png" alt="Image" class="w3-left w3-margin-right"
+                style="width:50px"><br><br><br>
+              <span class="w3-large">GitHub Repository</span><br>
+              <!-- <span url="https://github.com/umarovj/Fantastic_4/blob/main/Group_Project.ipynb">Sed mattis nunc</span> -->
+              <a href="https://github.com/umarovj/Fantastic_4"><button
+                  class="w3-button w3-padding-small w3-white w3-border"><i>Go There »</i></button></a>
+            </li>
+            <li class="w3-padding-16">
+              <img src="Resources\slideshare-scribd-logo.png" alt="Image" class="w3-left w3-margin-right"
+                style="width:120px"><br><br>
+              <span class="w3-large">Source</span><br>
+              <!-- <span>Praes tinci sed</span> -->
+              <a href="https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices"><button
+                  class="w3-button w3-padding-small w3-white w3-border"><i>Go There »</i></button></a>
+            </li>
+
+
+          </ul>
         </div>
-        <div class="w3-col m4 w3-hide-small">
-          <!-- <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p> -->
-        </div>
+        <!-- END Introduction Menu -->
       </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <!-- <img src="/w3images/avatar_g.jpg" style="width:100%"> -->
-    <div class="w3-container w3-white">
-      <h4><b>Project Overview</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-    </div>
-  </div><hr>
+      <!-- END GRID -->
+    </div><br>
+
+    <div>
+      <h4>Data Visuals</h4>
+    </div class="w3-white">
+    <ul>
+      
+        <div class='tableauPlaceholder' id='viz1646430743794' style='position: static'>
+          <object class='tableauViz w3-auto' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='House_Data_F4_16464307297180&#47;Dashboard1' />
+            <param name='tabs' value='yes' />
+            <param name='toolbar' value='yes' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1646430743794');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.minHeight = '447px'; vizElement.style.maxHeight = '1000px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+          else if (divElement.offsetWidth > 500) { vizElement.style.width = '100px'; vizElement.style.minHeight = '100px'; vizElement.style.maxHeight = '100px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+          else { vizElement.style.width = '100px'; vizElement.style.height = '100px'; }
+          var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+      
   
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>LINKS</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="\Resources\GitHub-Mark.png" alt="Image" class="w3-left w3-margin-right" style="width:50px"><br><br><br>
-        <span class="w3-large">GitHub Repository</span><br>
-        <!-- <span url="https://github.com/umarovj/Fantastic_4/blob/main/Group_Project.ipynb">Sed mattis nunc</span> -->
-        <a href="https://github.com/umarovj/Fantastic_4"><button class="w3-button w3-padding-small w3-white w3-border"><i>Go There »</i></button></a>
-      </li>
-      <li class="w3-padding-16">
-        <img src="Resources\slideshare-scribd-logo.png" alt="Image" class="w3-left w3-margin-right" style="width:120px"><br><br>
-        <span class="w3-large">Source</span><br>
-        <!-- <span>Praes tinci sed</span> -->
-        <a href="https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices"><button class="w3-button w3-padding-small w3-white w3-border"><i>Go There »</i></button></a>
-      </li> 
-      <!-- <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <!-- <span>Ultricies congue</span> -->
-        <!-- <p><button class="w3-button w3-padding-small w3-white w3-border"><b>Go There »</b></button></p>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <!-- <span>Lorem ipsum dipsum</span> -->
-      <!-- </li> -->
+  
     </ul>
+
+
+    <!-- END w3-content -->
   </div>
-  <hr> 
- 
-  <!-- Labels / tags -->
-  <!-- <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div> -->
-  
-<!-- END Introduction Menu -->
-</div>
 
-<!-- END GRID -->
-</div><br>
 
-<!-- END w3-content -->
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button> -->
-  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-</footer>
+    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+  </footer>
 
 </body>
+
 </html>
