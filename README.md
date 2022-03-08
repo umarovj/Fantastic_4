@@ -28,9 +28,8 @@ Tableu - Map Visulization, Charts, visual data comparison, Tableu Public for web
 
 Javascript - MapBox, creating a website with application integrated
 
-Juptyer Notebook/google Colab - Matplotlib, data processing, data parsing, website scraping
+Juptyer Notebook/google Colab - Matplotlib, data processing
 
-SQL Postgres - Joining datasets, quickly analyzing data structures
 
 ## Storing Our Data
 
