@@ -46,7 +46,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-card-4 w3-margin w3-white">
           <img src="Resources\housing-photo.jfif" style="width: 100%; height: 237px; object-fit: cover;">
           <div class="w3-container">
-            <h3><b>The Hypothesis</b></h3>
+            <h3><b>Hypothesis and Goal</b></h3>
             <h5>House Sales of King County, Washington <span class="w3-opacity"></span></h5>
             <a href="https://drive.google.com/file/d/1wJNC3d67wOyCcJnJ-zb8UQLXREac9592/view?usp=sharing"
               download="logo.png">The Data CSV File</a>
@@ -55,31 +55,23 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
 
           <div class="w3-container">
-            <p>The housing market is an integral part of millions of Americans lives. A home isn’t just where one’s
-              heart is, it is also a where we spend most of our time, especially in the age of COVID. It should then be
-              clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd many
-              out of the market, and a particularly low price could be an indicator of potential problem with the home
-              itself. What is ultimately optimal is variant between individuals, but the main question for all potential
-              buyers remains: “How much is this house really worth?” <br></p>
+            <p>The housing market is an integral part of millions of Americans' lives. A home isn’t just where one’s
+              heart is, it is also where we spend most of our time, especially in the age of COVID. It should then be
+              clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd
+              many out of the market, and a particularly low price could be an indicator of a potential problem with
+              the home itself. What is ultimately optimal is variant between individuals, but the main question for
+              all potential buyers remains: “How much is this house worth?” <br></p>
 
-            <p> For our project, we will answering just that. We will be performing a general analysis on the various
-              factors that determine housing prices. More specifically, it is our belief that we can accurately predict
-              a home’s price given a specific set of parameters. To begin, we complied a series of data sources from
-              Zillow, climatology resource centers, and others. Using this data, we will be constructing a machine
-              learning algorithm to accurately predict a home’s price given multiple parameters such as a potential
-              abode’s number of bedrooms, square footage, and location to name a few examples. The type of machine
-              learning we will be employing is a standard Multilinear Regression model, with housing price as our target
-              or independent variables, and the earlier mentioned parameters like number of bedrooms as our dependent
-              variables. <br></p>
+            <p> For our project, we will be answering just that. We will be performing general analysis of the various
+              factors that determine housing prices. More specifically, we believe that we can accurately predict a
+              home’s price given a specific set of parameters. To begin, we found house sales data from King Country,
+              Washington. Using this data, we will be constructing a machine learning linear regression line and a
+              neural network algorithm to accurately predict a home’s price given multiple parameters such as the number
+              of bedrooms, square footage, and location to name a few. The type of machine learning we will be employing
+              is a standard Multilinear Regression model with housing price as our target variable and the earlier
+              mentioned parameters like the number of bedrooms as our dependent variables. For our neural network
+              portion, we will set up a Keras model and acquire its accuracy score under the same parameters. <br></p>
 
-            <p> Following initial regression on our existing data pool, it is then our goal to expand the scope of what
-              factors accurately and precisely determine a home’s price by finding more data and adding more variables
-              to our analysis. <br></p>
-
-            <p> As mentioned, our project will rely heavily on machine learning for the results regarding our analysis.
-              Still, additional resources and technology will be used, most prominently python and various packages such
-              as Matplotlib, Numpy, etc. We are also currently planning on employing tableau for data visualization and
-              SQL, in particular, for joining portions of our data as needed.</p>
             <div class="w3-row">
               <div class="w3-col m8 s12">
                 <!-- <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p> -->
@@ -101,11 +93,31 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
 
           <div class="w3-container">
-            <p>Our analysis involved a machine learning tool to predict housing prices. We used the Linear Regression
-              model from the Scikit-learn machine learning library for Python. For accurate predictions, we first needed
-              to process the data. We dropped these columns: 'id', 'view', 'lat', 'long', 'sqft_living15', and
-              'sqft_lot15'. The zero values in "yr-renovated" column have been replaced with "NaN" to not let the
-              machine count them as year zero. Our data was then ready to be trained and fitted for prediction.</p>
+            <p>For our analysis we implemented an analtical tool to predict housing prices. We used the Linear
+              Regression
+              model from the Scikit-learn machine learning library for Python. For proper predictions, we first needed
+              to process the data. Threrefore we dropped these columns: 'id', 'view', 'lat', 'long', 'sqft_living15',
+              'sqft_lot15' and 'yr_renovated'. We decided to drop 'yr_renovated' column because it reflected a very
+              small portion of our data.
+              There were 1130 revonvated house which is about %5 of our data. Our data was then ready to be trained and
+              fitted for prediction. <br><br>
+
+              The Images below represent our findings with linear regression:
+            </p>
+            <img src="Resources\Linear Regression with one Dependent Variable.PNG" alt="Image"
+              class="w3-left w3-margin-right" style="width:100%"><br><br>
+
+            <p>
+              The First image represents the R squared values aling with coefficient and intercept of the regression
+              equation
+
+            </p>
+            <img src="    " alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
+            <p>
+
+
+            </p>
+
             <div class="w3-row">
               <div class="w3-col m8 s12">
                 <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
@@ -120,8 +132,36 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-card-4 w3-margin w3-white">
           <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
           <div class="w3-container">
-            <h3><b>Machine Learning</b></h3>
+            <h3><b>Keras Model</b></h3>
             <h5>Title description, <span class="w3-opacity"></span></h5>
+            <P>
+              We used another model for our predictions through Keras machine learning algorithm.
+
+
+
+            </P>
+            <img src="Resources\Keras model set up.png" alt="Image" class="w3-left w3-margin-right"
+              style="width:100%"><br><br>
+            <p>
+              This image represents our neural network set up with four layers and "relu" activation functions
+            </p>
+
+            <img src="Resources\Variance Score.PNG" alt="Image" class="w3-left w3-margin-right"
+              style="width:100%"><br><br>
+            <p>
+              Our variance score is displayed above with %70 accuracy level.
+            </p>
+            <img src="Resources\price prediction Keras.png" alt="Image" class="w3-left w3-margin-right"
+            style="width:100%"><br><br>
+            <p>
+              We then tested our model for predicting price. 
+            </p>
+            <img src="Resources\Sale Price Keras.png" alt="Image" class="w3-left w3-margin-right"
+            style="width:100%"><br><br>
+            <p>
+              The image here shows what the model came up with. According to these variables the price is predicted to be $323,000. 
+            </p>
+
           </div>
 
           <div class="w3-container">
@@ -160,7 +200,34 @@ and is wrapped around the whole page content, except for the footer in this exam
             <h4><b>Project Overview</b></h4>
             <p>In this project we explore how different variables influence house price listings by utilizing machine
               learning. The data used for this analysis comes from King County, Washington with information on over two
-              thousand house listings. <br><br> *See a visual representation of our data at the bottom of the page </p>
+              thousand house listings. </p>
+            <p>
+            <h5>Data Columns<span class="w3-opacity"></span></h5>
+            id - Unique ID for each home sold <br>
+            date - Date of the home sale <br>
+            <b>price</b> - Price of each home sold <br>
+            bedrooms - Number of bedrooms <br>
+            bathrooms - Number of bathrooms, where .5 accounts for a room with a toilet but no shower <br>
+            sqft_living - Square footage of the apartments interior living space <br>
+            sqft_lot - Square footage of the land space <br>
+            floors - Number of floors <br>
+            waterfront - A dummy variable for whether the apartment was overlooking the waterfront or not <br>
+            view - An index from 0 to 4 of how good the view of the property was <br>
+            condition - An index from 1 to 5 on the condition of the apartment <br>
+            grade - An index from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average
+            level of construction and design, and 11-13 have a high quality level of construction and design. <br>
+            sqft_above - The square footage of the interior housing space that is above ground level <br>
+            sqft_basement - The square footage of the interior housing space that is below ground level <br>
+            yr_built - The year the house was initially built <br>
+            yr_renovated - The year of the house’s last renovation <br>
+            zipcode - What zipcode area the house is in <br>
+
+
+
+            </p>
+
+
+            <br><br><b> *See a visual representation of our data at the bottom of the page</b> </p>
           </div>
         </div>
         <hr>
