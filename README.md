@@ -6,25 +6,17 @@ Housing market in United States.
 
 ## The data source used for the topic
 
-
 https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices
-
-
-~~Zillow database~~
-
-~~Zillow source: https://www.zillow.com/research/data/~~
 
 ## The group hypothesis
 
 Hypothesis and Goal:
 
-The housing market is an integral part of millions of Americans lives. A home isn’t just where one’s heart is, it is also a where we spend most of our time, especially in the age of COVID. It should then be clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd many out of the market, and a particularly low price could be an indicator of potential problem with the home itself. What is ultimately optimal is variant between individuals, but the main question for all potential buyers remains: “How much is this house really worth?”
+The housing market is an integral part of millions of Americans' lives. A home isn’t just where one’s heart is, it is also where we spend most of our time, especially in the age of COVID. It should then be clear why, in part, determining a potential home’s worth is so important. Too high a price will crowd many out of the market, and a particularly low price could be an indicator of a potential problem with the home itself. What is ultimately optimal is variant between individuals, but the main question for all potential buyers remains: “How much is this house worth?”
 
-For our project, we will answering just that. We will be performing a general analysis on the various factors that determine housing prices. More specifically, it is our belief that we can accurately predict a home’s price given a specific set of parameters. To begin, we complied a series of data sources from Zillow, climatology resource centers, and others. Using this data, we will be constructing a machine learning algorithm to accurately predict a home’s price given multiple parameters such as a potential abode’s number of bedrooms, square footage, and location to name a few examples. The type of machine learning we will be employing is a standard Multilinear Regression model, with housing price as our target or independent variables, and the earlier mentioned parameters like number of bedrooms as our dependent variables. 
+For our project, we will be answering just that. We will be performing general analysis of the various factors that determine housing prices. More specifically, we believe that we can accurately predict a home’s price given a specific set of parameters. To begin, we found house sales data from King Country, Washington. Using this data, we will be constructing a machine learning linear regression line and a neural network algorithm to accurately predict a home’s price given multiple parameters such as the number of bedrooms, square footage, and location to name a few. The type of machine learning we will be employing is a standard Multilinear Regression model with housing price as our target variable and the earlier mentioned parameters like the number of bedrooms as our dependent variables. For our neural network portion, we will set up a Keras model and acquire its accuracy score under the same parameters.
 
-Following initial regression on our existing data pool, it is then our goal to expand the scope of what factors accurately and precisely determine a home’s price by finding more data and adding more variables to our analysis.
-
-As mentioned, our project will rely heavily on machine learning for the results regarding our analysis. Still, additional resources and technology will be used, most prominently python and various packages such as Matplotlib, Numpy, etc. We are also currently planning on employing tableau for data visualization and SQL, in particular, for joining portions of our data as needed.
+As mentioned, our project will rely heavily on machine learning for the results regarding our analysis. Still, additional resources and technology will be used. We will display our visualizations through Tableau to help the viewers understand the data we are working with. All of our projects essentials are then set up and organized with HTML as a web page. 
 
 ## The group's thought on what approach they may want to use for analysis (i.e. what ML technique we may want to use to investigate the hypothesis)
 
