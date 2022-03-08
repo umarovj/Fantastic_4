@@ -70,6 +70,30 @@ With a general idea of how our data-frame works we were left refining exactly wh
 
 To begin, we identified potential variable types (view and id) as redundant info to be dropped. On top of this, various other parameters such as lat and long were identified as less relevant for our analysis. This left the variables highlighted in green as more significant in the first part of our analysis. From these targeted variables, we were in essence gathering the building blocks to our machine learning algorithm that would be the base of our project.
 
+## **Linear Regression**
+
+After going through our data, we dcided to create a linear regression to better understand how our different subsets of data interact with our target variable, price. To begin, a simple regression was formed between bedrooms and price. Upon compiling this code, summary statistics were also generated to effectively evaluate the strength of our linear regression chiefly the R-squared (**R^2**) measurement as well as Root Mean Squared Error (**RMSE**). It is also worth noting that though bedrooms was chosen as the first metric to evaluate against price, any dependent variable could be used in place of bedrooms.
+
+![image](https://user-images.githubusercontent.com/91284661/157297357-ec3a0fe4-7201-40ef-9dd7-7471a0ad09bc.png)
+
+Following our regression, the summary stats were displayed in a table below in conjunction with the intercept of and coefficient for our linear regression.
+
+![image](https://user-images.githubusercontent.com/91284661/157297424-b4c37af9-b3ad-4696-a402-d10bef7d30b2.png)
+
+As mentioned and shown when we were first examining our data, we are working with more than one dependent variable however – bedrooms is just one metric we can draw from to try and understand the price of a house. Because of this, we are ultimately determined to create a linear regression with Multiple Dependencies. So instead of our model forming a standard, y=mx+B as our simple linear regression would, our new model will take the shape of: y= m_i x_i+ ...+m_N x_N+b where N is the number of dependent variables. There are many reasons for choosing this approach, the primary being that additional data will increase the strength of our model (as determined by an increase in the (R^2) value. This also makes sense on an intuitive level as one can readily understand how there are numerous considerations to make when deciding something as important as buying a house: it seldom if ever has come down to the number of bedrooms.
+
+There is a tradeoff in adding additional data to our model, though it has a potential to increase the strength of your regression model, it also has the power to add additional levels of bias. To account for this bias, and in doing so help us construct our Linear Regression, a correlation chart was built to find the correlation between each of our data types.
+
+![image](https://user-images.githubusercontent.com/91284661/157297546-c9533f8c-2688-4d0d-86d8-bf4bb927e07c.png)
+
+![image](https://user-images.githubusercontent.com/91284661/157297577-546b063a-d19c-40f6-ba71-ec36b6dfc9c3.png)
+
+It was a combination of our correlation charts and the initial finding when we first visualized and examined our data that allowed us to make our decisions in constructing our final Linear Regression model. Still, there was one other final step to make: an adjusted R-Squared Value (**Adj-R^2**). The sequence was defined below, and used a replacement to our standard R^2 ultimately serves as an additional precaution to improve accuracy within our model.
+
+Thrown all together, our Linear Regression Model ended up containing our parameters, 'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'view', 'grade', and 'yr_built'.
+
+![image](https://user-images.githubusercontent.com/91284661/157297677-19d6800b-9b04-4185-a39c-6643f8c5e586.png)
+
 ## Machine Learning
 
 Along with the Single and Multiple Regression we decided to create a machine learning(ML) model to try and predict the price of a house(output) given certain pieces of data. We decided on a Keras ML model but before we set that up, we preprocessed the data by selecting the following data points for our inputs; bedrooms, bathrooms, square foot living, square foot lot, floors, waterfront, condition, grade, year built, and zip code and we use the MinMaxScaler to scale our model. With the preprocessed data we setup the ML model with 4 dense layers, 19 neurons in the first 3 layers and a single neuron in the last layer. We used the relu activation function and the Adam optimizer for the model due to its efficiency with a large number of parameters in our dataset. The ML model worked through 400 epochs and came up a mean absolute error of $129,490 and an explained variance score of 70.27% meaning our algorithm is about 70% accurate based on our data with a mean error of about $130,000. If we look at a random house in our dataset we can see our model is predicting a price of about $380,700, whereas our actual sale price was $323,000. Although our price prediction was about $60,000 off it predicts the price fairly well and with more neighborhood specific data we believe we could make a more accurate ML model.
