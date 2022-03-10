@@ -1,13 +1,5 @@
 # Fantastic_4
 
-## The group topic
-
-Housing market in United States. 
-
-## The data source used for the topic
-
-https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices
-
 ## The group hypothesis
 
 Hypothesis and Goal:
@@ -93,3 +85,9 @@ Along with the Single and Multiple Regression we decided to create a machine lea
 ![This is an image](https://github.com/umarovj/Fantastic_4/blob/main/Resources/Keras%20model.PNG)
 ![This is an image](https://github.com/umarovj/Fantastic_4/blob/main/Resources/price%20prediction.PNG)
 ![This is an image](https://github.com/umarovj/Fantastic_4/blob/main/Resources/Sale%20Price.PNG)
+
+
+
+## The data source used for the topic
+
+https://www.slideshare.net/PawanShivhare1/predicting-king-county-house-prices
