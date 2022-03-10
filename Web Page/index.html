@@ -89,7 +89,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
           <div class="w3-container">
             <h3><b>Linear Regression</b></h3>
-            <h5>Title description, <span class="w3-opacity"></span></h5>
+            <!-- <h5>Title description, <span class="w3-opacity"></span></h5> -->
           </div>
 
           <div class="w3-container">
@@ -102,22 +102,52 @@ and is wrapped around the whole page content, except for the footer in this exam
               There were 1130 revonvated house which is about %5 of our data. Our data was then ready to be trained and
               fitted for prediction. <br><br>
 
-              The Images below represent our findings with linear regression:
+              The aim of this portion of our project was to determine which variables were ultimately the most important 
+              within our data set. After determining this, we would then produce a multilinear regression model amongst 
+              our target variables to better predict price changes based on changes within our model’s corresponding 
+              components. The actual linear regression model began with a test on all of our individual data set types 
+              against our target variable, price. 
             </p>
-            <img src="Resources\Linear Regression with one Dependent Variable.PNG" alt="Image"
+            <img src="Resources\Linear Reg 1.png" alt="Image"
               class="w3-left w3-margin-right" style="width:100%"><br><br>
 
+
+
+
             <p>
-              The First image represents the R squared values aling with coefficient and intercept of the regression
-              equation
+              Mathematical metrics like Root Mean Square Error and R-Square were also compiled as part of this analysis. 
+              After compiling these metrics, we also illustrated them for further help in our decision making process.
 
             </p>
-            <img src="    " alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
-            <p>
+            <img src="Resources\Linear Reg Table 1.PNG" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
+            <img src="Resources\price vs sqft living correlation.png" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
 
+            <p>
+              Still, not every data type could be used in our regression model to explain price. To help us pick and choose, 
+              we also constructed a correlation matrix between our data types to further help us. This matrix would effectively 
+              help us in reducing levels of bias that would otherwise pop up in our regression model, something R-squared can’t 
+              account for.
 
             </p>
+            <img src="Resources\Standardized Correlation Matrix.png" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
+            <img src="Resources\Pearson Correlation Matrix.png" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
 
+            <p>
+              After finally choosing our target variables: ‘bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'view', 'grade', 
+              and 'yr_built' – we added a new metric, adjusted R-Squared for further insights.
+            </p>
+            <img src="Resources\Adjusted R2.png" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
+
+            <p>
+              And from this, created a multilinear regression model and displayed its finding similar to our earlier, simpler 
+              regression model that used only one dependent variable.
+            </p>
+            <img src="Resources\Linear Regression With Multiple Dependent Variables Code.png" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
+            <img src="Resources\Linear Regression with Multiple Dependent Variables Results.png" alt="Image" class="w3-left w3-margin-right" style="width:100%"><br><br>
+            <p>
+              These same target variables, and their effects on price now much more understood, were then used as the basis for our deeper 
+              Machine-Learning involving the Keras model.
+            </p>
             <div class="w3-row">
               <!-- <div class="w3-col m8 s12">
                 <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
@@ -133,7 +163,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
           <div class="w3-container">
             <h3><b>Keras Model</b></h3>
-            <h5>Title description, <span class="w3-opacity"></span></h5>
+            <!-- <h5>Title description, <span class="w3-opacity"></span></h5> -->
             <P>
               We used another model for our predictions through Keras machine learning algorithm.
 
