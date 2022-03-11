@@ -43,7 +43,7 @@ The exact contents of our quick analysis at-a-glance might better be viewed thro
 
 ![image](https://user-images.githubusercontent.com/91284661/154810065-34699061-3808-4fc3-b9e7-8a0ae23ed16e.png)
 
-Such skew is present in our target variable, price shown in the histogram above. From viewing this, we can tell that there are significant data points on the higher end of the price index causing a large bias in our data directed towards higher prices.
+Such skew is present in our target variable, price shown in the boxplot above. From viewing this, we can tell that there are significant data points on the higher end of the price index causing a large bias in our data directed towards higher prices.
 
 ## Goals and Analysis
 
