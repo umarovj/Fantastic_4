@@ -41,6 +41,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-row">
 
       <!-- Blog entries -->
+      <!-- HYPOTHESIS -->
       <div class="w3-col l8 s12">
         <!-- Blog entry -->
         <div class="w3-card-4 w3-margin w3-white">
@@ -85,6 +86,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <hr>
 
         <!-- Blog entry -->
+        <!-- LINEAR REGRESSION -->
         <div class="w3-card-4 w3-margin w3-white">
           <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
           <div class="w3-container">
@@ -158,22 +160,32 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
           </div>
         </div>
-
+<!-- KERAS MODEL -->
         <div class="w3-card-4 w3-margin w3-white">
           <!-- <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%"> -->
           <div class="w3-container">
             <h3><b>Keras Model</b></h3>
             <!-- <h5>Title description, <span class="w3-opacity"></span></h5> -->
             <P>
-              We used another model for our predictions through Keras machine learning algorithm.
-
-
-
+              Along with the Single and Multiple Regression we decided to create a machine learning(ML) model to try and predict the 
+              price of a house(output) given certain pieces of data. We decided on a Keras ML model but before we set that up, we 
+              preprocessed the data by selecting the following data points for our inputs; bedrooms, bathrooms, square foot living, 
+              square foot lot, floors, waterfront, condition, grade, year built, and zip code and we use the MinMaxScaler to scale 
+              our model. With the preprocessed data we setup the ML model with 4 dense layers, 19 neurons in the first 3 layers and 
+              a single neuron in the last layer. We used the relu activation function and the Adam optimizer for the model due to 
+              its efficiency with a large number of parameters in our dataset. The ML model worked through 400 epochs and came up 
+              a mean absolute error of $129,490 and an explained variance score of 70.27% meaning our algorithm is about 70% accurate 
+              based on our data with a mean error of about $130,000. If we look at a random house in our dataset we can see our model 
+              is predicting a price of about $380,700, whereas our actual sale price was $323,000. Although our price prediction was 
+              about $60,000 off it predicts the price fairly well and with more neighborhood specific data we believe we could make 
+              a more accurate ML model.
             </P>
-            <img src="Resources\Keras model set up.png" alt="Image" class="w3-left w3-margin-right"
+            <img src="Resources\Keras model set up 1.png" alt="Image" class="w3-left w3-margin-right"
+              style="width:100%"><br><br>
+            <img src="Resources\Model predictions.png" alt="Image" class="w3-left w3-margin-right"
               style="width:100%"><br><br>
             <p>
-              This image represents our neural network set up with four layers and "relu" activation functions
+              
             </p>
 
             <img src="Resources\Variance Score.PNG" alt="Image" class="w3-left w3-margin-right"
@@ -181,7 +193,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <p>
               Our variance score is displayed above with %70 accuracy level.
             </p>
-            <img src="Resources\price prediction Keras.png" alt="Image" class="w3-left w3-margin-right"
+            <!-- <img src="Resources\price prediction Keras.png" alt="Image" class="w3-left w3-margin-right"
               style="width:100%"><br><br>
             <p>
               We then tested our model for predicting price.
@@ -191,7 +203,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <p>
               The image here shows what the model came up with. According to these variables the price is predicted to
               be $323,000.
-            </p>
+            </p> -->
 
           </div>
 
@@ -294,7 +306,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
       <!-- END GRID -->
     </div><br>
-
+<!-- TABLEAU VISUALS -->
     <div>
       <h4>Data Visuals</h4>
     </div class="w3-white">
